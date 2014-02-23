@@ -14,10 +14,9 @@ import javax.servlet.http.HttpServletResponse;
 public class Main extends HttpServlet implements Servlet {
     /**
      * Constructor.
-     * <p/>
-     * Does nothing at present.
      */
     public Main() {
+        // Does nothing at present
     }
 
     /**
@@ -25,6 +24,7 @@ public class Main extends HttpServlet implements Servlet {
      *
      * @param request  The incoming request object.
      * @param response The outgoing response to modify to incude our custom data.
+     *
      * @throws ServletException
      * @throws IOException
      */
