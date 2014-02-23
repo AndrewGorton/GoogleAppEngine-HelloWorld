@@ -24,7 +24,6 @@ public class Main extends HttpServlet implements Servlet {
      *
      * @param request  The incoming request object.
      * @param response The outgoing response to modify to incude our custom data.
-     *
      * @throws ServletException
      * @throws IOException
      */
@@ -33,7 +32,10 @@ public class Main extends HttpServlet implements Servlet {
         PrintWriter out = response.getWriter();
         out.println("<html>");
         out.println("<head><title>Hello from DevSoup</title></head>");
-        out.println("<body>DevSoup's Java Servlet says hello</body>");
+        out.println("<body>");
+        out.println(String.format("<p><a href=\"http://www.devsoup.co.uk\">DevSoup</a>'s Java Servlet says hello @ %s.</p>", new java.util.Date()));
+        out.println("<p>Source code available <a href=\"https://github.com/devsoup/GoogleAppEngine-HelloWorld\">here</a>.</p>");
+        out.println("</body>");
         out.println("</html>");
         out.close();
     }
