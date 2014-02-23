@@ -1,8 +1,15 @@
-GoogleAppEngine-HelloWorld
-==========================
+Google AppEngine - Hello World
+==============================
 
-Base project to produce Hello World from a Java servlet.
+## Background
+A simple project to produce Hello World from a Java servlet, and host it on Google's AppEngine infrastructure.
 
+## Requirements
+Built on a Mac using:-
+* JDK 1.7
+* Maven 3.1.1
+
+## Usage
 Try `mvn appengine:devserver` to start a local server.
 
 To deploy to Google's AppEngine proper, you'll need a Google App Engine account, and an AppID. Edit
