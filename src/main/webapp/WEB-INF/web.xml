@@ -4,8 +4,18 @@
         <servlet-class>uk.co.devsoup.gae.helloworld.Main</servlet-class>
     </servlet>
 
+    <servlet>
+        <servlet-name>default</servlet-name>
+        <servlet-class>org.mortbay.jetty.servlet.DefaultServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>devsoup-gae_helloworld</servlet-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/servlet/*</url-pattern>
+    </servlet-mapping>
+
+    <servlet-mapping>
+        <servlet-name>default</servlet-name>
+        <url-pattern>/static/*</url-pattern>
     </servlet-mapping>
 </web-app>

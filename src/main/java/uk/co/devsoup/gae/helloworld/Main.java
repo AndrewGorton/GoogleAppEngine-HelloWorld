@@ -34,7 +34,7 @@ public class Main extends HttpServlet implements Servlet {
         out.println("<head><title>Hello from DevSoup</title></head>");
         out.println("<body>");
         out.println(String.format("<p><a href=\"http://www.devsoup.co.uk\">DevSoup</a>'s Java Servlet says hello @ %s.</p>", new java.util.Date()));
-        out.println("<p>Source code available <a href=\"https://github.com/devsoup/GoogleAppEngine-HelloWorld\">here</a>.</p>");
+        out.println("<p>Source code available <a href=\"https://github.com/devsoup/GoogleAppEngine-HelloWorld/releases/tag/v1.0.0\">here</a>.</p>");
         out.println("</body>");
         out.println("</html>");
         out.close();
